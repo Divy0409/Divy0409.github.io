@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f0f0f;
+  color: #ffffff;
+}
+
+h1, h2 {
+  color: #00f5ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 60px;
+  max-width: 1100px;
+  margin: auto;
+}
