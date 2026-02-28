@@ -8,7 +8,7 @@ function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        Hi, I'm Divy 👋
+        Hi, I'm Divy Patel👋
       </motion.h1>
 
       <motion.p
@@ -17,7 +17,7 @@ function Home() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
       >
-        MS Data Science | Machine Learning | AI | Django Developer
+        MS Data Science @ Michigan Technological University | Machine Learning | AI | Django Developer
       </motion.p>
 
       {/* Moved the button OUTSIDE the <p> tag */}
