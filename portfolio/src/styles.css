@@ -1,20 +1,64 @@
+/* 1. Global Reset & Body Setup */
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #0f0f0f;
-  color: #ffffff;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #222222; /* Your dark gray background */
+  color: #ffffff; 
 }
 
-h1, h2 {
-  color: #00f5ff;
-}
-
-a {
-  text-decoration: none;
-}
-
+/* 2. The Main Wrapper - Centers everything and stops it from stretching too wide */
 .container {
-  padding: 60px;
-  max-width: 1100px;
-  margin: auto;
+  max-width: 1000px; /* Limits the maximum width */
+  margin: 0 auto;    /* Centers the container horizontally */
+  padding: 100px 20px;   /* Adds a little breathing room on the sides for smaller screens */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* 3. Header Layout (Logo Left, Nav Right) */
+header {
+  background-color: #1a1a1a; /* Slightly darker background for the header area */
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;                     /* Turns on Flexbox */
+  justify-content: space-between;    /* Pushes Logo to the left, Nav to the right */
+  align-items: center;               /* Vertically centers them */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Space between nav items */
+  margin: 0;
+  padding: 0;
+}
+
+/* 4. Hero Section Layout (Your intro and button) */
+.hero-section {
+  padding: 100px 0; /* Pushes the content down from the header */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  color: #cccccc;
+  margin-bottom: 30px;
+}
+
+.download-btn {
+  background-color: #00e5ff; /* Your cyan button color */
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
 }

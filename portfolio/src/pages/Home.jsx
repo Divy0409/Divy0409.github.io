@@ -12,27 +12,43 @@ function Home() {
       </motion.h1>
 
       <motion.p
+        style={styles.subtitle}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
       >
         MS Data Science | Machine Learning | AI | Django Developer
-        <a href="/resume.pdf" download>
-        <button style={styles.button}>Download Resume</button>
-        </a>
       </motion.p>
+
+      {/* Moved the button OUTSIDE the <p> tag */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.8 }}
+      >
+        <a href="/resume.pdf" download>
+          <button style={styles.button}>Download Resume</button>
+        </a>
+      </motion.div>
     </div>
   );
 }
+
 const styles = {
+  subtitle: {
+    color: "#cccccc",
+    fontSize: "1.2rem",
+    marginBottom: "30px", /* Adds space between text and button */
+  },
   button: {
-    marginTop: "20px",
     padding: "12px 24px",
     background: "#00f5ff",
     border: "none",
     borderRadius: "8px",
     cursor: "pointer",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    color: "#000",
   }
 };
+
 export default Home;
